@@ -101,6 +101,10 @@ class TrendGraph extends Component {
         scales: {
           yAxes: [
             {
+              scaleLabel: {
+                display: true,
+                labelString: 'Weekly Downloads',
+              },
               ticks: {
                 beginAtZero: true,
                 callback: (value) => Number(value).toLocaleString(),
